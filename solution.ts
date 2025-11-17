@@ -34,10 +34,11 @@ class Person {
 
 type filtersRating = {
   title: string;
-  rating:  0 | 1 | 2 | 3 | 4 | 5;
+  rating:  number;
 };
 function filterByRating<T extends filtersRating>(data: T[]): T[] {
-  const filteredRatingData = data.filter((item) => item.rating >= 4);
+  const filteredRatingData = data.filter((item) => item.rating >= 4 && item.rating<= 5
+);
   return filteredRatingData;
 }
 
