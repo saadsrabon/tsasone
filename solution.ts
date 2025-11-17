@@ -1,6 +1,7 @@
 type formatValueType = string | number | boolean;
 function formatValue(value: formatValueType): formatValueType {
   if (typeof value === 'string') {
+  if (value.trim() === "") return "Please provide a valid string";
     return value.toUpperCase();
   } else if (typeof value === 'number') {
     return value * 10;
