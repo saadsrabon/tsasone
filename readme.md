@@ -23,8 +23,11 @@ Type Alias
 
 
 <!--  -->
-What is the use of the keyof keyword in TypeScript? Provide an example.
-TypeScript-এ keyof কীওয়ার্ড
+What is the use of the keyof keyword in TypeScript?
+ Provide an example.
+
+
+TypeScript-এ keyof কীওয়ার্ড আলোচনা করা হলঃ
 
 অবজেক্টের সব key বের করা।
 
@@ -34,6 +37,7 @@ TypeScript-এ keyof কীওয়ার্ড
 
 কাস্টম টাইপ ইউটিলিটি তৈরিতে ব্যবহার।
 
+example:
 type User = {
   name: string;
   age: number;
